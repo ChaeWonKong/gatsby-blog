@@ -1,10 +1,16 @@
-# gatsby-starter-hello-world
-Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site
+# Dev Blog with Gatsby and React
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
+Personal dev blog built with Gatsby and React.
+Uses markdown files to generate blog posts.
+
+Gatsby starter in use: 'gatsby-starter-hello-world'
 ```
-gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
+https://github.com/gatsbyjs/gatsby-starter-hello-world
 ```
 
-## Running in development
-`gatsby develop`
+## Dependencies
+- "gatsby": "^2.0.0",
+- "gatsby-source-filesystem": "^2.0.1",
+- "gatsby-transformer-remark": "^2.1.3",
+- "react": "^16.5.1",
+- "react-dom": "^16.5.1"
