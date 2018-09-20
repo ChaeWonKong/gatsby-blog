@@ -1,10 +1,11 @@
 import React from "react";
-import Header from "../components/header";
+import Layout from "../components/layout";
 import "../static/style.css";
 
 export default () => (
   <div className="main-div">
-    <Header />
-    <p className="index">This is index</p>
+    <Layout>
+      <p className="index">This is index</p>
+    </Layout>
   </div>
 );
