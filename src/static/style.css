@@ -13,3 +13,20 @@ html, body {
     background: white;
     box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15)
 }
+
+.about {
+    color: black;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15)
+}
+
+.about-ul {
+    list-style: none;
+}
+
+.about-ul > li {
+    padding: 5px 0;
+}
