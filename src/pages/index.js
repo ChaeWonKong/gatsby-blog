@@ -11,7 +11,11 @@ export default ({ data }) => (
           {data.allMarkdownRemark.totalCount} Posts
         </h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div key={node.id} style={{ paddingBottom: `45px` }}>
+          <div
+            className="post-index"
+            key={node.id}
+            style={{ marginBottom: `25px` }}
+          >
             <Link
               to={node.fields.slug}
               style={{ textDecoration: `none`, color: `inherit` }}
