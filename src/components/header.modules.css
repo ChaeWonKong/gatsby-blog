@@ -8,9 +8,15 @@
     color: #fff;
 }
 
+
 .header-right {
     display: flex;
     align-items: center;
+}
+
+.header-link {
+    text-decoration: none;
+    color: inherit;
 }
 
 .header > h1 {
