@@ -6,10 +6,10 @@ export default ({ data }) => {
   const post = data.markdownRemark;
   return (
     <Layout>
-      <div>
+      <div className="post">
         <h1 className="post-h1">{post.frontmatter.title}</h1>
         <div
-          className="blog-post"
+          className="post-content"
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
       </div>

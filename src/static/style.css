@@ -31,18 +31,28 @@ html, body {
     padding: 5px 0;
 }
 
-.blog-post {
+.post {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.post-content {
     line-height: 1.8em;
 }
 
 .post-h1 {
     color: rgb(91, 91, 91);
 }
-.blog-post > h1, h2, h3 {
+.post-content > h1, h2, h3 {
     padding-top: 45px;
     color: rgb(91, 91, 91)
 }
 
-.blog-post > p{
+.post-content > p{
     color: rgb(121, 121, 121);
+}
+
+.post-content:last-child {
+    margin-bottom: 100px;
 }
