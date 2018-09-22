@@ -2,6 +2,7 @@ import React from "react";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 import "../static/style.css";
+import HTMLEllipsis from "react-lines-ellipsis/lib/html";
 
 export default ({ data }) => (
   <div className="main-div">
@@ -20,14 +21,20 @@ export default ({ data }) => (
               to={node.fields.slug}
               style={{ textDecoration: `none`, color: `inherit` }}
             >
-              <h3>
+              <h3 className="index-h3">
                 {node.frontmatter.title}{" "}
                 <span style={{ color: `#bbb` }}>
                   {" "}
                   - {node.frontmatter.date}
                 </span>
               </h3>
-              <p>{node.excerpt}</p>
+              <div className="index-ellipsis">
+                <HTMLEllipsis
+                  unsafeHTML={node.html}
+                  maxLine="5"
+                  basedOn="letters"
+                />
+              </div>
             </Link>
           </div>
         ))}
@@ -50,7 +57,7 @@ export const query = graphql`
           fields {
             slug
           }
-          excerpt
+          html
         }
       }
     }

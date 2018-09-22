@@ -9,10 +9,22 @@ html, body {
     color: black;
     margin-bottom: 10px;
     border-radius: 5px;
-    padding: 20px;
+    padding: 50px;
     background: white;
-    box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15)
+    box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
+    letter-spacing: 0.8pt;
 }
+
+.index-h3 {
+    padding: 0;
+}
+
+.index-ellipsis {
+    line-height: 1.5em;
+    letter-spacing: 0.6pt;
+}
+
+
 
 .about {
     color: black;
@@ -30,23 +42,25 @@ html, body {
 .about-ul > li {
     padding: 5px 0;
 }
-
-.post {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+.post-container {
+    border-radius: 5px;
+    padding: 80px;
+    background: white;
+    box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
 }
-
 .post-content {
     line-height: 1.8em;
+    letter-spacing: 0.8pt;
 }
 
 .post-h1 {
     color: rgb(91, 91, 91);
+    letter-spacing: 0.8pt;
 }
-.post-content > h1, h2, h3 {
+.post-content > h2, h3 {
     padding-top: 45px;
-    color: rgb(91, 91, 91)
+    color: rgb(91, 91, 91);
+    letter-spacing: 0.8pt;
 }
 
 .post-content > p{
@@ -56,3 +70,5 @@ html, body {
 .post-content:last-child {
     margin-bottom: 100px;
 }
+
+

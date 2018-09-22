@@ -6,7 +6,7 @@ export default ({ data }) => {
   const post = data.markdownRemark;
   return (
     <Layout>
-      <div className="post">
+      <div className="post-container">
         <h1 className="post-h1">{post.frontmatter.title}</h1>
         <div
           className="post-content"
