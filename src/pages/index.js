@@ -8,7 +8,7 @@ export default ({ data }) => (
   <div className="main-div">
     <Layout>
       <div>
-        <h4 style={{ marginBottom: `45px` }}>
+        <h4 className="post-num" style={{ marginBottom: `45px` }}>
           {data.allMarkdownRemark.totalCount} Posts
         </h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
@@ -23,7 +23,7 @@ export default ({ data }) => (
             >
               <h3 className="index-h3">
                 {node.frontmatter.title}{" "}
-                <span style={{ color: `#bbb` }}>
+                <span className="index-date" style={{ color: `#bbb` }}>
                   {" "}
                   - {node.frontmatter.date}
                 </span>

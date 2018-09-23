@@ -71,8 +71,96 @@ html, body {
     margin-bottom: 100px;
 }
 
+.post-container > ul, li {
+    color: rgb(121, 121, 121);
+}
+
 blockquote {
     margin-left: 1em;
     border-left: 0.25em solid #dfe2e5;
     padding: 0 1em;
+    color: rgb(121, 121, 121);
+}
+
+/* Media Query */
+@media(orientation: portrait) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        background: rgb(251, 251, 251);
+    }
+    .post-num {
+        padding-left: 5vw;
+    }
+
+    .post-index {
+        display: flex;
+        color: black;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 5vw;
+        background: white;
+        box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
+        letter-spacing: 0.8pt;
+        line-height: 2vw;
+        font-size: 3vw;
+    }
+    .index-date {
+        display: block;
+    }
+
+    .index-h3 {
+        padding: 0;
+        font-size: 4vw;
+        line-height: 7vw;
+    }
+    
+    .index-ellipsis {
+        line-height: 7vw;
+        letter-spacing: 0.6pt;
+    }
+    
+    .about {
+        color: black;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 5vw;
+        background: white;
+        box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
+        line-height: 7vw;
+    }
+    
+    .about-ul {
+        list-style: none;
+    }
+    
+    .about-ul > li {
+        padding: 5px 0;
+    }
+    .post-container {
+        border-radius: 5px;
+        padding: 7vw;
+        background: white;
+        box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
+    }
+    .post-content {
+        line-height: 7vw;
+        letter-spacing: 0.3vw;
+    }
+    
+    .post-h1 {
+        color: rgb(91, 91, 91);
+        letter-spacing: 0.3vw;
+    }
+    
+    .post-content:last-child {
+        margin-bottom: 10vw;
+    }
+    
+    blockquote {
+        margin-left: 3vw;
+        border-left: 0.25em solid #dfe2e5;
+        padding: 0 1em;
+        color: rgb(121, 121, 121);
+    }
 }
