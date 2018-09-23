@@ -30,7 +30,6 @@
     "react-meta-tags": "^0.6.0"
   },
   "devDependencies": {
-    "@babel/preset-stage-1": "^7.0.0",
     "gh-pages": "^2.0.0"
   }
 }
