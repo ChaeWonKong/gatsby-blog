@@ -107,6 +107,7 @@
     }
     
     .header-list > li {
+        color: rgb(251, 251, 251);
         padding-left: 10px;
         font-size: 3vw;
     }
@@ -124,10 +125,9 @@
         text-align: right;
         font-size: 3vw;
     }
-    
+
     .header-list > li:hover {
-        color: #bbb;
-        transition: all .2s ease-in-out;
+        color: #fff;
       }
     
     .header-button {
@@ -138,5 +138,11 @@
         border-radius: 5px;
         border: 1px solid white;
         margin-right: 10px;
+      }
+
+      ::placeholder {
+        color: rgb(231, 231, 231);
+        font-size: 3vw;
+        font-weight: 100;
       }
   }

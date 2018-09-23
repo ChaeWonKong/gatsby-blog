@@ -91,6 +91,7 @@ blockquote {
     }
     .post-num {
         padding-left: 5vw;
+        font-size: 3vw;
     }
 
     .post-index {
@@ -116,7 +117,7 @@ blockquote {
     }
     
     .index-ellipsis {
-        line-height: 7vw;
+        line-height: 5vw;
         letter-spacing: 0.6pt;
     }
     
@@ -144,7 +145,7 @@ blockquote {
         box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
     }
     .post-content {
-        line-height: 7vw;
+        line-height: 3vw;
         letter-spacing: 0.3vw;
     }
     
