@@ -35,6 +35,42 @@
     color: white;
 }
 
+/* sub-nav */
+.sub-ul > ul {
+    display: none;
+    list-style: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+.sub-ul:hover > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-around;
+    height: 120px;
+    color: white;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
+}
+
+
+
+.sub-ul-link {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+.sub-ul-link:hover {
+    color: #dc6ae8;
+    transition: all .1s ease-in-out;
+}
+
+
 .header-search {
     padding-left: 10px;
 }

@@ -20,7 +20,31 @@ export default () => (
 
         <li>
           <Link to="/" className="header-link">
-            devlog
+            <div className="sub-ul">
+              devlog
+              <ul>
+                <li>
+                  <Link to="/" className="sub-ul-link">
+                    tech
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" className="sub-ul-link">
+                    algorithm
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" className="sub-ul-link">
+                    front-end
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" className="sub-ul-link">
+                    back-end
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </Link>
         </li>
 
