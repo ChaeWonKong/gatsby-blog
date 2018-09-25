@@ -31,7 +31,7 @@ export default ({ data }) => (
               <div className="index-ellipsis">
                 <HTMLEllipsis
                   unsafeHTML={node.html}
-                  maxLine="5"
+                  maxLine="3"
                   basedOn="letters"
                 />
               </div>
