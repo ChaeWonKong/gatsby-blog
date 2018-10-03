@@ -8,26 +8,24 @@ export default ({ data }) => (
   <div className="main-div">
     <Layout>
       <div>
-        <h4 className="post-num" style={{ marginBottom: `45px` }}>
-          {data.allMarkdownRemark.totalCount} Posts
+        <h4 className="post-num">
+          Total {data.allMarkdownRemark.totalCount} Posts
         </h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div
-            className="post-index"
-            key={node.id}
-            style={{ marginBottom: `25px` }}
-          >
+          <div className="post-index" key={node.id}>
             <Link
               to={node.fields.slug}
-              style={{ textDecoration: `none`, color: `inherit` }}
+              style={{
+                textDecoration: `none`,
+                color: `inherit`
+              }}
             >
-              <h3 className="index-h3">
-                {node.frontmatter.title}{" "}
-                <span className="index-date" style={{ color: `#bbb` }}>
-                  {" "}
-                  - {node.frontmatter.date}
-                </span>
-              </h3>
+              <div className="index-title">
+                <h3 className="index-h3">
+                  {node.frontmatter.title}{" "}
+                  <span className="index-date"> - {node.frontmatter.date}</span>
+                </h3>
+              </div>
               <div className="index-ellipsis">
                 <HTMLEllipsis
                   unsafeHTML={node.html}

@@ -4,23 +4,40 @@ html, body {
     background: rgb(251, 251, 251);
 }
 
+.post-num {
+    margin-bottom: 30px;
+    text-align: end;
+    font-weight: 400;
+    color: #666666;
+}
+
 .post-index {
     display: flex;
-    color: black;
+    color: #666666;
     margin-bottom: 10px;
-    border-radius: 5px;
-    padding: 50px;
     background: white;
     box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
     letter-spacing: 0.8pt;
 }
 
+.index-title {
+    max-width: 1000px;
+    border-bottom: 1px solid #eee;
+}
+
+.index-date {
+    font-weight: 200;
+    color: #bbb;
+}
+
 .index-h3 {
-    padding: 0;
+    margin: 0;
+    padding: 30px 30px;
 }
 
 .index-ellipsis {
-    line-height: 1.5em;
+    padding: 10px 30px;
+    line-height: 1.4em;
     letter-spacing: 0.6pt;
 }
 
