@@ -10,6 +10,17 @@ export default ({ children }) => (
       <meta name="viewport" content="width=divice-width, user-scalable=no" />
       <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/languages/go.min.js" />
       <script>hljs.initHighlightingOnLoad();</script>
+      <script>hljs.initHighlightingOnLoad();</script>
+      {/* Global site tag (gtag.js) - Google Analytics */}
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-127437510-1"
+      />
+      <script>
+        window.dataLayer = window.dataLayer || []; function gtag()
+        {dataLayer.push(arguments)}
+        gtag('js', new Date()); gtag('config', 'UA-127437510-1');
+      </script>
     </MetaTags>
     <Header />
     <div className="container">
